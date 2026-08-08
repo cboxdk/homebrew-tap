@@ -57,5 +57,3 @@ class Telemetryd < Formula
       shell_output("#{bin}/telemetryd validate --data-dir #{testpath}/data")
   end
 end
-
-# client-id probe
