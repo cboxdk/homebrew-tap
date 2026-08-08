@@ -57,3 +57,5 @@ class Telemetryd < Formula
       shell_output("#{bin}/telemetryd validate --data-dir #{testpath}/data")
   end
 end
+
+# write-path probe: removed automatically when the publisher rewrites this file
