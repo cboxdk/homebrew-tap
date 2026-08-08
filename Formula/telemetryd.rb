@@ -10,27 +10,26 @@
 class Telemetryd < Formula
   desc "Single-binary observability backend: OTLP in, Loki/Tempo/Prometheus APIs out"
   homepage "https://github.com/cboxdk/telemetryd"
-  version "0.11.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v#{version}/telemetryd-#{version}-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.11.1/telemetryd-0.11.1-aarch64-apple-darwin.tar.gz"
       sha256 "20c73693356468d7ae5274380974a0d7c7fd1ad68df037b9c1dbece4a8da1bf1"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v#{version}/telemetryd-#{version}-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.11.1/telemetryd-0.11.1-x86_64-apple-darwin.tar.gz"
       sha256 "ba54b170d0de75f660e3c3434dcc65614676cf521799453f745b5ce195862722"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v#{version}/telemetryd-#{version}-aarch64-unknown-linux-musl.tar.gz"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.11.1/telemetryd-0.11.1-aarch64-unknown-linux-musl.tar.gz"
       sha256 "a23e153b51192b6f7738fef7166cd02e1ac31ba134c48cb241da255f9dad6f1c"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v#{version}/telemetryd-#{version}-x86_64-unknown-linux-musl.tar.gz"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.11.1/telemetryd-0.11.1-x86_64-unknown-linux-musl.tar.gz"
       sha256 "7210b2e5bc99db0fd94d97e844446a8f3a48de466bdad9ae6c0e21b587ae22b4"
     end
   end
