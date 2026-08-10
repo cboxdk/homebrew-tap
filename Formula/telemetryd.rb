@@ -10,27 +10,27 @@
 class Telemetryd < Formula
   desc "Single-binary observability backend: OTLP in, Loki/Tempo/Prometheus APIs out"
   homepage "https://github.com/cboxdk/telemetryd"
-  license "Apache-2.0"
+  license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.24.3/telemetryd-0.24.3-aarch64-apple-darwin.tar.gz"
-      sha256 "5ae17b09b235c99ee2b086e8788f15d7609f06f114b6b2f3567d6bb4334b489a"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.25.0/telemetryd-0.25.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7c17200a064fbdee4f7d87d9ceb5ceb378880f60540d87821af3135a1ab82c0a"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.24.3/telemetryd-0.24.3-x86_64-apple-darwin.tar.gz"
-      sha256 "2f32768b4e9905139dbefb9877bed3c99b27e772a878639fced61a25a4dd3ded"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.25.0/telemetryd-0.25.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4f9fcb5b205155493929eb3b17025a5ec980d15471a7b8f27953a69373cc94b0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.24.3/telemetryd-0.24.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "ffff82372cbef9efdf7b9c3e836ec3b9b1a561b71b73dfc0c8f3a93ee970f433"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.25.0/telemetryd-0.25.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5cd5bc0cbb5195ec50edbf2b22649e2343756742bc270a6141e2c20a247e3b77"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.24.3/telemetryd-0.24.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "35072f45f30718791f898327aea5db58c0d36cf1d17cf24efd6c0381756ff992"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.25.0/telemetryd-0.25.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f4240e621755a3c827cd6da3f39cd759911c394d8212a3ee85eafe3d23c05076"
     end
   end
 
