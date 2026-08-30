@@ -1,36 +1,38 @@
-# Homebrew formula for fpm-tune.
+# Homebrew formula for fpm-tune — the SOURCE template.
 #
-# Lives in the fpm-tune repo so it is versioned with the code it installs, and is
-# published to cboxdk/homebrew-tap by scripts/publish-formula.py from a release.
+# Versioned with the code so the formula can never describe a build that does not
+# exist. The checksums are placeholders on purpose: they only exist once a release
+# has been built, and `scripts/publish-formula.py` fills them in from the release's
+# SHA256SUMS and pushes the result to cboxdk/homebrew-tap. A formula with
+# real-looking digests nobody verified is worse than one that obviously is not ready.
 #
-# fpm-tune manages a running PHP-FPM on a Linux server; on a Mac this is mainly for
-# trying it and reading `fpm-tune plan`. There is deliberately no `service` block:
-# on a real host it runs under systemd with --apply, not `brew services`.
+# There is deliberately no `service` block: on a real host fpm-tune runs under
+# systemd with --apply, managing a live PHP-FPM — not via `brew services`.
 class FpmTune < Formula
   desc "Autotune PHP-FPM pools against a host's real memory; reload, never restart"
   homepage "https://github.com/cboxdk/fpm-tune"
-  version "0.1.0-beta.1"
+  version "0.1.0-beta.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.1/fpm-tune-0.1.0-beta.1-aarch64-apple-darwin.tar.gz"
-      sha256 "97a778cdfb18fe41fc27109507b06feadb6ff7248c2dc5d0e2ed017a61f834f4"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.2/fpm-tune-0.1.0-beta.2-aarch64-apple-darwin.tar.gz"
+      sha256 "9e886c876de8b6c38957deb38a890209fb67a1483a391db6b821ddbebbb3f8e6"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.1/fpm-tune-0.1.0-beta.1-x86_64-apple-darwin.tar.gz"
-      sha256 "59c08b48c9e6b8b4f61ea4c4f9f28a05f3d7f9c8cd3bf9f57ca3305be06c7d2e"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.2/fpm-tune-0.1.0-beta.2-x86_64-apple-darwin.tar.gz"
+      sha256 "77c951b7d70e9383a36b8e56dcdb9075dcd30a540092d4c9611a9843dcd58729"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.1/fpm-tune-0.1.0-beta.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "5970b497a4e53efaad66d0b271a70e87faf01d4bb740db49dbaa0145a77d5d0a"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.2/fpm-tune-0.1.0-beta.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "96b1c45bd1cce47e353139ab15310d2682bfe0d211697d53072d1b11b9cbbe86"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.1/fpm-tune-0.1.0-beta.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "27fff14eb81f772300e33f9df5fddef9565d48935550898cb3e7a05d05642d6d"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.2/fpm-tune-0.1.0-beta.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e328d770c5cb16f06de22f0d0708ff1b4421d14db9731f737edef8e0bde1f0f4"
     end
   end
 
@@ -41,8 +43,7 @@ class FpmTune < Formula
 
   test do
     # The binary runs and reports the version it was built as. `plan` needs a live
-    # PHP-FPM, which the sandbox has none of, so this is the honest limit of what
-    # can be asserted here.
+    # PHP-FPM, which the sandbox has none of, so this is the honest limit here.
     assert_match version.to_s, shell_output("#{bin}/fpm-tune version")
   end
 end
