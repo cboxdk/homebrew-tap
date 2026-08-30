@@ -11,28 +11,28 @@
 class FpmTune < Formula
   desc "Autotune PHP-FPM pools against a host's real memory; reload, never restart"
   homepage "https://github.com/cboxdk/fpm-tune"
-  version "0.1.0-beta.3"
+  version "0.1.0-beta.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.3/fpm-tune-0.1.0-beta.3-aarch64-apple-darwin.tar.gz"
-      sha256 "bfd6f969b5d46e85f80079cf67e2ad77cd7cc69f19ce4f58b16948c365718dc8"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-aarch64-apple-darwin.tar.gz"
+      sha256 "36a4c68a07d916127ad439c7ac5ccd8c0a741f7aea038a1d29185c1ec38aaf7f"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.3/fpm-tune-0.1.0-beta.3-x86_64-apple-darwin.tar.gz"
-      sha256 "687f010a1fdce4ee46b5760eb1566a7d6774ee1cb8f735df144ff4a34d8f8f83"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-x86_64-apple-darwin.tar.gz"
+      sha256 "d006233dcd0bc315ef9ca56ea4ab81cbcf76f92d42fc7fe5859527bd9e7ec3b1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.3/fpm-tune-0.1.0-beta.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "11182ed5d09425868162c44888f09217add4ea4d5c4cea334c52ccdb3288eeb5"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "86e74b9d826ed4ecd9614e919e0b736825f73b799e5dc3bcf9d17f0642b6fb0a"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.3/fpm-tune-0.1.0-beta.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "49e65bd13c873bc59c00f4d7c668a0f9710040c7e77a456c76c2bbe952b86326"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "655649865a1ddb10f4f3dbc907f6c64d8a96a5a32eeaaa48a9701d8cbc46b5ce"
     end
   end
 
