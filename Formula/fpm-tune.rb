@@ -11,28 +11,28 @@
 class FpmTune < Formula
   desc "Autotune PHP-FPM pools against a host's real memory; reload, never restart"
   homepage "https://github.com/cboxdk/fpm-tune"
-  version "0.1.0-beta.4"
+  version "0.1.0-beta.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-aarch64-apple-darwin.tar.gz"
-      sha256 "36a4c68a07d916127ad439c7ac5ccd8c0a741f7aea038a1d29185c1ec38aaf7f"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.5/fpm-tune-0.1.0-beta.5-darwin-arm64.tar.gz"
+      sha256 "4b1a677d88ce6c30148cebfc66761eed1e6ce8275f007253bbb70d3ac06edcfe"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-x86_64-apple-darwin.tar.gz"
-      sha256 "d006233dcd0bc315ef9ca56ea4ab81cbcf76f92d42fc7fe5859527bd9e7ec3b1"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.5/fpm-tune-0.1.0-beta.5-darwin-amd64.tar.gz"
+      sha256 "34ffd04baca9d9d87c83b2a77dc3bb1693d1c7714a0e4ec5f51ced40781fcfbc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "86e74b9d826ed4ecd9614e919e0b736825f73b799e5dc3bcf9d17f0642b6fb0a"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.5/fpm-tune-0.1.0-beta.5-linux-arm64.tar.gz"
+      sha256 "79f3bff5f45529f67174a8273dccfd9b581319256b8d16a26dac7d5f7509930a"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.4/fpm-tune-0.1.0-beta.4-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "655649865a1ddb10f4f3dbc907f6c64d8a96a5a32eeaaa48a9701d8cbc46b5ce"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.5/fpm-tune-0.1.0-beta.5-linux-amd64.tar.gz"
+      sha256 "0997d839985593b4695402a8114c7d19787fcd9bbcbec828eb0ea0a89bcd5f37"
     end
   end
 
