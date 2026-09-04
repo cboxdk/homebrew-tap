@@ -11,28 +11,28 @@
 class FpmTune < Formula
   desc "Autotune PHP-FPM pools against a host's real memory; reload, never restart"
   homepage "https://github.com/cboxdk/fpm-tune"
-  version "0.1.0-beta.24"
+  version "0.1.0-beta.25"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.24/fpm-tune-0.1.0-beta.24-darwin-arm64.tar.gz"
-      sha256 "861d4bb6faba530b34de0ea6bea52da8e4b8acd342b6358c9803f7d989bf7218"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.25/fpm-tune-0.1.0-beta.25-darwin-arm64.tar.gz"
+      sha256 "fb2156c74f69eb5b8414ce2b6e41892100a6abdd9e584ce00198179d572860bf"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.24/fpm-tune-0.1.0-beta.24-darwin-amd64.tar.gz"
-      sha256 "5327096cbb62294266f5b0378ebb86d01e21d9206b22b4c0e6aac7f469dba579"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.25/fpm-tune-0.1.0-beta.25-darwin-amd64.tar.gz"
+      sha256 "ccc408a67a1df1324f58f5606ce4a9647c1a997652303d07b7a2285035e877a8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.24/fpm-tune-0.1.0-beta.24-linux-arm64.tar.gz"
-      sha256 "3f12e1faf973e8d184f24023d2db009f7fc2b23eea58f99e4c3bb0a7a384fefc"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.25/fpm-tune-0.1.0-beta.25-linux-arm64.tar.gz"
+      sha256 "d76edce645d17d88856f7ba17ff67fd12be7f4e50554a078b1d6e965b86474fb"
     end
     on_intel do
-      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.24/fpm-tune-0.1.0-beta.24-linux-amd64.tar.gz"
-      sha256 "059ba15aaa23c2490250fc829d9acc4774caac92e709417afae1f5461ea2fb69"
+      url "https://github.com/cboxdk/fpm-tune/releases/download/v0.1.0-beta.25/fpm-tune-0.1.0-beta.25-linux-amd64.tar.gz"
+      sha256 "34f7d8a1aa51789262f1468e64674be3316ccb065ea744ba208e55dde2e18c2e"
     end
   end
 
