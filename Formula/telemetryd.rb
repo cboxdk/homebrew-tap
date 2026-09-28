@@ -14,23 +14,23 @@ class Telemetryd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.2/telemetryd-0.69.2-aarch64-apple-darwin.tar.gz"
-      sha256 "1e9e3860763628bf7ebbe366d6006890c7e601ae349fa1d64892565b9a71e5c1"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.3/telemetryd-0.69.3-aarch64-apple-darwin.tar.gz"
+      sha256 "5362b7d6fb0ed7a79aa6b2876c1cf8641965a39fdf50c7743c2a254d4ad900d3"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.2/telemetryd-0.69.2-x86_64-apple-darwin.tar.gz"
-      sha256 "c5f93db92eddd3896ae4147a346c76c3097c435c01e34b44d531b63d064ebf5d"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.3/telemetryd-0.69.3-x86_64-apple-darwin.tar.gz"
+      sha256 "404e4eecba9d81d952efc3aad4deb82c48bdc32cadebef31070ece48ad46aa4e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.2/telemetryd-0.69.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "ca14c069aed8036b606e46388d9415a97c89b0d9d8ba87b612b64deb5634b669"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.3/telemetryd-0.69.3-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "dd0c678c4240b203fba33bd33e744db1f3fb8e8c29daddceeacce9af6c063a50"
     end
     on_intel do
-      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.2/telemetryd-0.69.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "6867c40056f71710b3845388fc6ed9481cb1228171ae706966175e6f14e0276a"
+      url "https://github.com/cboxdk/telemetryd/releases/download/v0.69.3/telemetryd-0.69.3-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "4ec546c49ec94fdf59b0e91f4d1d36f2239b275dd2c2a9b07d3d7ea3afdb469e"
     end
   end
 
